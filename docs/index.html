@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>CJL Labyrinth - A*</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+
+    <section class="page-header">
+      <h1 class="project-name">Matrix</h1>
+      <h2 class="">For simple dynamic matrix manipulation</h2>
+      <a href="https://github.com/carvalhojldc/matrix" class="btn">View on GitHub</a>
+      <a href="https://github.com/carvalhojldc/matrix/zipball/v0.1" class="btn">Download v0.1 .zip</a>
+      <a href="https://github.com/carvalhojldc/matrix/tarball/v0.1" class="btn">Download v0.1 .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+
+<h1><a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+About</h1>
+
+    <p><strong>Matrix</strong> is a library that provides simple access to dynamic matrix in C++.</p>
+
+<h1><a id="library" class="anchor" href="#library" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+Library</h1>
+
+    <h3> Function list</h3>
+    <table>
+    <tbody> <tr> <td> <strong> .getLines()               </strong> </td> <td>Provides the number of lines in the matrix</td> </tr> </tbody>
+    <tbody> <tr> <td> <strong> .getColumns()             </strong> </td> <td>Provides the number of columns in the matrix</td> </tr> </tbody>
+    <tbody> <tr> <td> <strong> .newSize(line, column) </strong> </td> <td>Sets a new size for the matrix</td> </tr> </tbody>
+    <tbody> <tr> <td> <strong> .inv()                    </strong> </td> <td>Provides a inverse copy of the matrix</td> </tr> </tbody>
+    <tbody> <tr> <td> <strong> .trans()                  </strong> </th> <td>Provides a transposed copy of the matrix</td> </tr> </tbody>
+    </table>
+
+    <h3> Operations list</h3>
+    <table>
+    <thead> <tr> <th>  ==  </th> <td>Element-wise equality evaluation of two object</td> </tr> </thead>
+    <tbody> <tr> <th> !=   </th> <td>Element-wise non-equality evaluation of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> =    </th> <td>Assign an object or value</td> </tr> </tbody>
+    <tbody> <tr> <th> +=   </th> <td>Addition of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> -=   </th> <td>Subtraction of one object from another</td> </tr> </tbody>
+    <tbody> <tr> <th> +    </th> <td>Addition of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> -    </th> <td>Subtraction of one object from another</td> </tr> </tbody>
+    </table>
+
+    <h3>Example</h3>
+    <pre><code>Matrix matA(2,2);
+Matrix matB(2,2);
+Matrix matC;
+
+// Possible access notation
+matA(0,0)  = 1;
+matA(0,1)  = 2;
+matA[1][0] = 3;
+matA[1][1] = 4;
+
+// Shows all matrix elements
+std::cout << matA;
+
+matA = 0;  // Assigns 0 to all array elements
+matB = 10; // Assigns 10 to all array elements
+
+matC = matA * matB;
+matA = matB;
+matA += matB;
+
+// Changing the size of the matrix
+matA.newSize(4,4);
+matB.newSize(1,1);
+std::cout << matA.getLines() << ' ' << matA.getColumns();</code></pre>
+
+<h1><a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+License</h1>
+
+    <p><strong>Matrix</strong> licensed under the <a href="https://github.com/carvalhojldc/matrix/blob/master/LICENSE">MIT License</a>.</p>
+
+  <footer class="site-footer">
+      <span class="site-footer-owner"><a href="https://github.com/carvalhojldc/labyrinth">Matrix</a> is maintained by <a href="https://carvalhojldc.github.io">João Leite</a>.</span>
+      <span class="site-footer-credits"><a href="https://github.com/jasonlong/cayman-theme">Cayman     theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+
+  </footer>
+
+    </section>
+
+  </body>
+</html>
