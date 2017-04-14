@@ -36,17 +36,18 @@ Library</h1>
     <tbody> <tr> <td> <strong> .newSize(line, column) </strong> </td> <td>Sets a new size for the matrix</td> </tr> </tbody>
     <tbody> <tr> <td> <strong> .inv()                    </strong> </td> <td>Provides a inverse copy of the matrix</td> </tr> </tbody>
     <tbody> <tr> <td> <strong> .trans()                  </strong> </th> <td>Provides a transposed copy of the matrix</td> </tr> </tbody>
+    <tbody> <tr> <td> <strong> .eye()                  </strong> </th> <td>Provides a identity matrix</td> </tr> </tbody>
     </table>
 
     <h3> Operations list</h3>
     <table>
-    <thead> <tr> <th>  ==  </th> <td>Element-wise equality evaluation of two object</td> </tr> </thead>
-    <tbody> <tr> <th> !=   </th> <td>Element-wise non-equality evaluation of two objects</td> </tr> </tbody>
-    <tbody> <tr> <th> =    </th> <td>Assign an object or value</td> </tr> </tbody>
-    <tbody> <tr> <th> +=   </th> <td>Addition of two objects</td> </tr> </tbody>
-    <tbody> <tr> <th> -=   </th> <td>Subtraction of one object from another</td> </tr> </tbody>
-    <tbody> <tr> <th> +    </th> <td>Addition of two objects</td> </tr> </tbody>
-    <tbody> <tr> <th> -    </th> <td>Subtraction of one object from another</td> </tr> </tbody>
+    <thead> <tr> <th> ==  </th> <td>Element-wise equality evaluation of two object</td> </tr> </thead>
+    <tbody> <tr> <th> !=  </th> <td>Element-wise non-equality evaluation of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> =   </th> <td>Assign an object or value</td> </tr> </tbody>
+    <tbody> <tr> <th> +=  </th> <td>Addition of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> -=  </th> <td>Subtraction of one object from another</td> </tr> </tbody>
+    <tbody> <tr> <th> +   </th> <td>Addition of two objects</td> </tr> </tbody>
+    <tbody> <tr> <th> -   </th> <td>Subtraction of one object from another</td> </tr> </tbody>
     </table>
 
     <h3>Example</h3>
@@ -59,6 +60,11 @@ matA(0,0)  = 1;
 matA(0,1)  = 2;
 matA[1][0] = 3;
 matA[1][1] = 4;
+
+// Functions
+matC = matB.eye();
+matC = matB.trans();
+matC = matB.inv();
 
 // Shows all matrix elements
 std::cout << matA;
